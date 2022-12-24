@@ -2,9 +2,14 @@ pipeline {
     agent any
 
     stages {
-        stage('Hello') {
+        stage('QA') {
             steps {
-                echo 'Hello World'
+                sh 'python print_name.py'
+            }
+        }
+        stage('Production') {
+            steps {
+                sh 'ls -a'
             }
         }
     }
