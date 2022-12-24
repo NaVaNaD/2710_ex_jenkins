@@ -4,10 +4,8 @@ pipeline {
     stages {
         stage('QA') {
             steps {
-                sh 'ls -a'
+                sh 'ls -ltr'
             }
-        
+        }
     }
-
-}
 }
