@@ -4,7 +4,11 @@ pipeline {
     stages {
         stage('1') {
             steps {
-                bat 'ls -a'
+                bat 'dir'
+            }
+             stage('1') {
+            steps {
+                bat 'python print_name.py'
             }
         }
     }
