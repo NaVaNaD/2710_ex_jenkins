@@ -2,9 +2,9 @@ pipeline {
     agent any
 
     stages {
-        stage('QA') {
+        stage('1') {
             steps {
-                sh 'dir'
+                sh 'ls -a'
             }
         }
     }
