@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('QA') {
             steps {
-                sh 'ls -ltr'
+                sh 'dir'
             }
         }
     }
