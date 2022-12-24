@@ -6,6 +6,7 @@ pipeline {
             steps {
                 bat 'dir'
             }
+        }
              stage('2') {
             steps {
                 bat 'python print_name.py'
@@ -14,4 +15,4 @@ pipeline {
     }
 
     }
-}
+
