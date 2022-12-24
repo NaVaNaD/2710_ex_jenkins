@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('1') {
             steps {
-                sh 'ls -a'
+                bat 'ls -a'
             }
         }
     }
